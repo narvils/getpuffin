@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puffin – Mindful Vape Tracker</title>
+
+  <link rel="icon" href="favicon.png" sizes="64x64" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav-bar">
+                <div class="nav-left">
+                    <a href="#" class="logo">puffin</a>
+                </div>
+
+                <div class="nav-center">
+                    <a href="#howitworks" class="nav-item">How it Works</a>
+                    <a href="#features" class="nav-item">Features</a>
+                </div>
+        
+                <div class="nav-right">
+                    <a href="https://apps.apple.com/us/app/puffin-vape-mindfully/id6745449928" class="download-button" target="_blank">Download App</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 👇 Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="grid-4">
+                    
+                    <!-- Left: Text -->
+                    <div class="col-2 hero-text">
+                        <h1 class="animated slide-up">
+                            Track puffs.<br/>
+                            Build healthier habits.
+                        </h1>
+                        <p class="animated slide-up" data-delay="100">
+                            A mindful vape tracker that helps you stay intentional, slow down, and build better habits.
+                        </p>
+                        <a href="https://apps.apple.com/us/app/puffin-vape-mindfully/id6745449928" target="_blank" class="store-badge">
+                            <img src="download_app_store.svg" alt="Download on the App Store" class="animated slide-up" data-delay="150"/>
+                        </a>
+                    </div>
+        
+                    <div class="col-2 hero-image animated slide-up" data-delay="200">
+                        <div class="hero-image-stack">
+                            <img src="img/welcome.webp" alt="Puffin character" class="puffin-behind" />
+                            <img src="img/hero.webp" alt="Puffin App Screenshot" id="mockup" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>              
+
+        <div class="full-width spacer"></div>
+
+        <!-- Problem Section -->
+        <section class="section">
+            <div class="container">
+                <div class="grid-4 align-center">
+                    <!-- Left: Image -->
+                    <div class="col-2 animated slide-up">
+                        <img src="img/Mockup_02.webp" alt="App Mockup" class="problem-image" />
+                    </div>
+        
+                    <!-- Right: Text -->
+                    <div class="col-2">
+                        <h5 class="green animated slide-up">Here’s the problem..</h5>
+                        <h2 class="animated slide-up" data-delay="50">
+                            <span>Vaping is easy to overdo.</span><br/>
+                            <span>And quitting isn’t always possible.</span>
+                        </h2>
+                        <p class="animated slide-up" data-delay="150">
+                            Without a ritual or stopping point, vaping becomes a mindless loop. Puffin helps you break that loop – not by forcing you to quit, but by giving structure, reflection, and healthy alternatives.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works Section -->
+        <section id="howitworks" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h5 class="green animated slide-up">How it Works</h5>
+                    <h2 class="animated slide-up" data-delay="50">Break the Habit Loop</h2>
+                    </h2>
+                </div>
+
+                <div class="habit-cards">
+
+                    <div class="habit-card animated slide-up" id="card-trigger" data-delay="300">
+                        <img src="img/Trigger.webp" alt="Trigger Penguin" class="habit-icon" />
+                        <div class="habit-content">
+                            <h6 class="habit-label trigger">Trigger</h6>
+                            <h4>You feel the urge to vape</h4>
+                            <p>A craving hits and you reach for your vape.</p>
+                        </div>
+                    </div>
+
+                    <div class="habit-card interrupt animated slide-up" id="card-interrupt" data-delay="300">
+                        <img src="img/Interrupt.webp" alt="Interrupt Penguin" class="habit-icon" />
+                        <div class="habit-content">
+                            <h6 class="habit-label interrupt">Interrupt</h6>
+                            <h4>Do a challenge first</h4>
+                            <p>A moment of small action to shift the habit.</p>
+                        </div>
+                    </div>
+                
+                    <div class="habit-card animated slide-up" id="card-routine" data-delay="300">
+                        <img src="img/Routine.webp" alt="Routine Penguin" class="habit-icon" />
+                        <div class="habit-content">
+                            <h6 class="habit-label routine">Routine</h6>
+                            <h4>You grab your vape</h4>
+                            <p>The habit kicks in before you even notice.</p>
+                        </div>
+                    </div>
+                
+                    <div class="habit-card animated slide-up" id="card-reward" data-delay="300">
+                        <img src="img/Reward.webp" alt="Reward Penguin" class="habit-icon" />
+                        <div class="habit-content">
+                            <h6 class="habit-label reward">Reward</h6>
+                            <h4>A quick hit of relief</h4>
+                            <p>But the loop continues, and the cravings come back stronger.</p>
+                        </div>
+                    </div>
+                
+                </div>
+                
+            </div>
+        </section>
+
+        <div class="spacer"></div>
+
+        <!-- Features Section -->
+        <section id="features" class="section animated slide-up">
+            <div class="container">
+                <div class="section-header text-left">
+                    <h5 class="green animated slide-up">Everything you need to stay intentional</h5>
+                    <h2 class="animated slide-up" data-delay="50">Tools to track, reflect, and change</h2>
+                </div>
+
+                <div class="features-grid grid-3">
+                    
+                    <!-- Bottom-aligned text, image top-right -->
+                    <div class="feature-card col-2 align-bottom text-left image-top-right animated slide-up" data-delay="50">
+                        <img src="img/Feature_Stats.webp" alt="Deep Statistics" class="feature-image stats" />
+                        <div class="feature-text-block">
+                            <h4>Deep Statistics</h4>
+                            <p>Understand your actual use and put it into perspective</p>
+                        </div>
+                    </div>
+
+                    <!-- Top-aligned, image bottom-left -->
+                    <div class="feature-card align-top text-center image-bottom-center animated slide-up" data-delay="200">
+                        <img src="img/Feature_VapeDebt.webp" alt="Vape Debt Mode" class="feature-image vapedebt" />
+                        <div class="feature-text-block">
+                            <h4>Vape Debt Mode</h4>
+                            <p>Vape now, earn back later</p>
+                        </div>
+                    </div>
+
+                    <!-- Icon cards (top aligned) -->
+                    <div class="feature-card with-icon align-bottom text-left image-top-center challenge animated slide-up"  data-delay="100">
+                        <img src="img/Feature_Challenge.webp" alt="Challenge Mode" class="feature-image challenge" />
+                        <div class="feature-text-block feature-text">
+                            <div class="feature-icon">
+                                <img src="img/Challenge_Icon.webp" alt="Challenge Icon" />
+                            </div>
+                            <div>
+                                <h4>Challenge Mode</h4>
+                                <p>Unlock puffs with challenges</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card with-icon align-bottom text-left image-top-right animated slide-up" data-delay="300">
+                        <img src="img/Feature_Timer.webp" alt="Timer Mode" class="feature-image timer" />
+                        <div class="feature-text-block feature-text">
+                            <div class="feature-icon">
+                                <img src="img/Timer_Icon.webp" alt="Timer Icon" />
+                            </div>
+                            <div>
+                                <h4>Timer Mode</h4>
+                                <p>Use a timer between vaping</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card with-icon align-bottom text-left image-top-right animated slide-up" data-delay="500">
+                        <img src="img/Feature_Basic.webp" alt="Basic Tracking" class="feature-image basic" />
+                        <div class="feature-text-block feature-text">
+                            <div class="feature-icon">
+                                <img src="img/Basic_Icon.webp" alt="Tracking Icon" />
+                            </div>
+                            <div>
+                                <h4>Basic Tracking</h4>
+                                <p>Just track your puffs, no limits</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Center-aligned text, image bottom-right -->
+                    <div class="feature-card align-bottom text-left image-top-center animated slide-up" data-delay="100">
+                        <img src="img/Feature_Vapes.webp" alt="Track Your Vapes" class="feature-image vapes" />
+                        <div class="feature-text-block">
+                            <h4>Track Your Vapes</h4>
+                            <p>Understand your spending and usage</p>
+                        </div>
+                    </div>
+
+                    <!-- Bottom-aligned text, image top-left -->
+                    <div class="feature-card col-2 align-bottom text-center image-top-center animated slide-up" data-delay="300">
+                        <img src="img/Feature_Mindful.webp" alt="Mindful Vaping Mode" class="feature-image mindful" />
+                        <div class="feature-text-block">
+                            <h4>Mindful Vaping Mode</h4>
+                            <p>Intentional pause between puffs</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="spacer"></div>
+
+       <!-- Science Section -->
+        <section class="section animated slide-up">
+            <div class="container">
+
+                <!-- Title -->
+                <div class="section-header text-center">
+                    <h5 class="green animated slide-up">Backed by Behavioral Science</h5>
+                    <h2 class="animated slide-up" data-delay="50">
+                        <span>Replacing a habit with a new action builds</span><br />
+                        <span class="emphasis">long-term change</span>
+                    </h2>
+                </div>
+
+                <!-- 4-column grid: 2col image + 2col list -->
+                <div class="science-grid grid-4">
+                    <!-- Left 2col: Image -->
+                    <div class="col-2 science-image-col animated slide-up">
+                        <img src="img/science.webp" alt="Science Visual" class="science-static-image" />
+                    </div>
+
+                    <!-- Right 2col: Text List -->
+                    <div class="col-2 science-text-col animated slide-up" data-delay="100">
+                        <div class="science-text-inner">
+                            <p>Puffin leverages:</p>
+                            <ul class="science-points">
+                                <li><img src="img/check.webp" class="check-icon" /> Behavioral substitution</li>
+                                <li><img src="img/check.webp" class="check-icon" /> Intentional friction</li>
+                                <li><img src="img/check.webp" class="check-icon" /> Micro-reward conditioning</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="spacer"></div>
+
+        <!-- FAQ Section -->
+        <section class="section">
+            <div class="container">
+                <div class="faq-grid grid-3">
+                    <!-- Left Title -->
+                    <div class="col-1 faq-title text-left animated slide-up">
+                        <h2>Frequently<br />Asked Questions</h2>
+                    </div>
+
+                    <!-- Right Accordion -->
+                    <div class="col-2 faq-accordion animated slide-up" data-delay="100">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                What is Puffin and how does it help me stop vaping
+                                <img src="img/chevron.svg" class="chevron" />
+                            </button>
+                            <div class="faq-answer">
+                                <p>Puffin is a mindful vape tracker designed to help you cut down or quit vaping by building better habits. Instead of just tracking usage, Puffin guides you to set limits, use timers, and replace cravings with short, healthy challenges. It helps break the habit loop and makes every puff a conscious choice — not a mindless routine.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Do I have to quit vaping to use Puffin?
+                                <img src="img/chevron.svg" class="chevron" /></button>
+                            <div class="faq-answer">
+                                <p>No. Puffin is designed to support reduction and intentional use—even if you're not ready to quit.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                What are the challenges and how do they work?
+                                <img src="img/chevron.svg" class="chevron" />
+                            </button>
+                            <div class="faq-answer">
+                                <p>Challenges are quick tasks (like a walk or pushups) you do before vaping. They create friction and build healthier habits.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                What is Vape Debt mode?
+                                <img src="img/chevron.svg" class="chevron" />
+                            </button>
+                            <div class="faq-answer">
+                                <p>If you vape early, you earn back those puffs later with challenges. It’s a gentle accountability system.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item last">
+                            <button class="faq-question">
+                                Is Puffin just a tracker, or does it actually help with habit change?
+                                <img src="img/chevron.svg" class="chevron" />
+                            </button>
+                            <div class="faq-answer">
+                                <p>Puffin is more than a tracker—it’s a behavioral tool to gradually shift patterns and create mindful change.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="spacer"></div>
+
+        <!-- CTA Section -->
+        <section class="section animated slide-up">
+            <div class="container">
+                <div class="cta-block grid-4">
+
+                    <!-- Left: Text -->
+                    <div class="col-2 cta-text animated slide-up">
+                        <h5 class="green">Download the App</h5>
+                        <h1>Turn your cravings<br />into change.</h1>
+                        <a href="https://apps.apple.com/us/app/puffin-vape-mindfully/id6745449928" target="_blank" class="store-badge">
+                            <img src="download_app_store.svg" alt="Download on the App Store" />
+                        </a>
+                    </div>
+
+                    <!-- Right: Visual -->
+                    <div class="col-2 cta-visual-wrapper">
+                        <div class="cta-visual">
+                            <img src="img/CTA_puffin.webp" class="cta-puffin" alt="Puffin" />
+                            <img src="img/CTA_mockup.webp" class="cta-phone" alt="Phone mockup" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+  </main>
+
+  <footer class="site-footer">
+	<div class="container footer-grid grid-3">
+		
+		<!-- Left: Logo -->
+		<div class="footer-left">
+			<span class="logo-black">puffin</span>
+		</div>
+
+		<!-- Center: Links -->
+		<div class="footer-links">
+			<a href="mailto:hi@georgewill.me">Contact</a>
+			<a href="privacy.html">Privacy</a>
+			<a href="terms.html">Terms</a>
+		</div>
+
+		<!-- Right: Copyright -->
+		<div class="footer-right">
+			<p>© 2025 George Will</p>
+		</div>
+
+	</div>
+</footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
