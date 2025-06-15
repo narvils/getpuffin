@@ -973,10 +973,20 @@ footer p {
         bottom: 360px;
         width: 280px;
     }
+}
+
+@media (max-width: 1024px) {
 
     .features-grid {
 		grid-template-columns: 1fr;
+        grid-column: span 1;
 	}
+
+    .features-grid .col-2 {
+		grid-column: span 1 !important; /* 👈 force all cards to behave as 1-column */
+	}
+
+    .feature-card { max-width: 920px;}
 }
 
 @media (max-width: 768px) {
@@ -1010,7 +1020,7 @@ footer p {
 	}
 
 	.section {
-		margin: var(--padding-M) 0;
+		margin: var(--padding-L) 0;
 	}
 
 	/* Header / Nav */
@@ -1136,6 +1146,9 @@ footer p {
     .cta-block {
         border-radius: 0;
     }
+
+    .site-footer { padding: 40px; padding-bottom: 12px; }
+    .footer-left { margin-bottom: 16px;}
 }
 
 @media (max-width: 480px) {
@@ -1143,14 +1156,47 @@ footer p {
 		padding: 0 20px;
 	}
 
-    .hero-text {
-       
+    .nav-bar {padding-top: 24px;}
+
+    .hero {
+        position: relative;
+        height: auto;
+        min-height: unset;
+        padding-bottom: 40px;
     }
+
+    .hero .grid-4 {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+    .puffin-behind {
+        left: 72px;
+        bottom: 80%;
+        width: 120px;
+    }
+
+    #mockup {width: 60%; margin-top: 24px;}
+
+    .hero-text { margin-top: 24px;}
+
+    .problem-text { text-align: center; }
+    p { font-size: 18px; line-height: 28px;}
+
+    .hero p { font-size: 18px; line-height: 28px;}
+
+    .hero .store-badge img { margin: 20px; }
 
     .hero h1 {
         font-size: 32px;
         font-weight: 600;
     }
+
+    h2 { font-size: 28px; margin: 12px 0;}
+    .habit-content h4 { font-size: 20px; }
+    .habit-content h6 { font-size: 16px; }
+    .habit-content p {font-size: 18px;line-height: 24px; }
 
 	header {
 		padding: 20px 0;
@@ -1169,13 +1215,58 @@ footer p {
 		font-size: 12px;
 	}
 
-    .puffin-behind {
-        right: -420px;
-        bottom: 180px;
-        width: 240px;
-        transform: rotate(-15deg);
-        z-index: 20;
+    .cta-text {
+        padding: 40px;
     }
+
+    .store-badge img {
+        margin: 0;
+    }
+
+    .cta-text .store-badge img {
+        margin-top: 20px;
+        height: 48px;
+    }
+
+    .cta-block h1 {
+        font-size: 32px;
+    }
+
+    .spacer { height: 0; }
+
+    .faq-title { margin-bottom: 0; }
+
+    .habit-cards { margin-top: 20px; gap: 16px;}
+
+    .science-text-inner p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .science-text-col { margin-top: 24px; }
+    .science-image-col { margin-top: 24px;}
+
+    .science-text-inner { align-items: center;}
+    .science-points li { font-size: 20px;}
+
+    .grid-4, .grid-3 { gap: 16px;}
+
+    #features { margin-bottom: 120px; }
+    #features .section-header { text-align: center;}
+    .features-grid { margin-top: 20px;}
+
+    .feature-card { height: 280px; padding: 24px;}
+    .feature-card.challenge .feature-text-block { padding: 24px; padding-top: 120px; }
+    .feature-icon {  width: 48px; height: 48px; }
+    .feature-card h4 { font-size: 18px; }
+    .feature-card p {line-height: 24px; }
+    .feature-card.with-icon .feature-text { gap: 16px;}
+
+    img.feature-image.basic { width: 400px; }
+    img.feature-image.timer { width: 280px;}
+    img.feature-image.vapedebt {max-width: 180px;}
+    img.feature-image.stats {top: 0px;}
+    img.feature-image.mindful { width: 280px;}
 }
 
 /*-------------------------------- Animations --------------------------------*/
