@@ -242,12 +242,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 });
 
-document.querySelectorAll('.track-appstore').forEach(btn => {
-	btn.addEventListener('click', function () {
-		gtag('event', 'click', {
+document.querySelectorAll('.track-appstore').forEach(button => {
+	button.addEventListener('click', function () {
+		gtag('event', 'CTA_Click', {
 			event_category: 'CTA',
-			event_label: 'App Store Button',
-			value: 1
+			event_label: 'App Store Button'
 		});
 	});
 });
+
