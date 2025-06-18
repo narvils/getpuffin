@@ -245,6 +245,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", function () {
 	document.querySelectorAll('.track-appstore').forEach(button => {
 		button.addEventListener('click', function () {
+			console.log('📦 App Store CTA clicked'); // <-- for testing
 			gtag('event', 'CTA_Click', {
 				event_category: 'CTA',
 				event_label: 'App Store Button'
@@ -252,4 +253,5 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 });
+
 
